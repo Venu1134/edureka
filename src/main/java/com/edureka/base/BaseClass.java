@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeTest;
 
 import com.edureka.actionDriver.ActionClass;
 
@@ -25,6 +26,7 @@ public class BaseClass {
 		return driver.get();
 	}
 	
+	@BeforeTest
 	public void loadConfig() throws IOException {
 		try {
 		prop = new Properties();
