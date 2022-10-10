@@ -1,0 +1,4 @@
+[2022-10-10 15:54:52,824] [INFO] [SourceProvider] [main]: serverStarted source variable initialized to true
+[2022-10-10 15:55:07,099] [INFO] [ResourceManager] [Framework stop - Equinox Container: 8954362b-d741-46a2-98f3-e7530f053b25]: Font registry disposed
+[2022-10-10 15:55:07,100] [INFO] [ResourceManager] [Framework stop - Equinox Container: 8954362b-d741-46a2-98f3-e7530f053b25]: Color registry disposed
+[2022-10-10 15:55:07,101] [INFO] [ResourceManager] [Framework stop - Equinox Container: 8954362b-d741-46a2-98f3-e7530f053b25]: Image registry disposed
