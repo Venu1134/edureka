@@ -514,7 +514,7 @@ public class ActionClass extends BaseClass {
 		return newImageString;
 	}
 
-	public static String getCurrentTime() {
+	public static String getCurrentDateTime() {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date(0));
 		return currentDate;
 	}
