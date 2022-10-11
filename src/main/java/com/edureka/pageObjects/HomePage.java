@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.eGov.actionDriver.ActionClass;
+import com.edureka.actionDriver.ActionClass;
 import com.edureka.base.BaseClass;
 
 public class HomePage extends BaseClass{

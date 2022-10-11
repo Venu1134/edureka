@@ -2,49 +2,56 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-11T11:53:09 IST" name="Default suite" finished-at="2022-10-11T11:53:18 IST" duration-ms="9322">
+  <suite started-at="2022-10-11T12:34:12 IST" name="Suite" finished-at="2022-10-11T12:34:32 IST" duration-ms="19817">
     <groups>
     </groups>
-    <test started-at="2022-10-11T11:53:09 IST" name="Default test" finished-at="2022-10-11T11:53:18 IST" duration-ms="9322">
+    <test started-at="2022-10-11T12:34:12 IST" name="Test" finished-at="2022-10-11T12:34:32 IST" duration-ms="19817">
       <class name="com.edureka.testScripts.SignUpPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@1c5920df]" started-at="2022-10-11T11:53:09 IST" name="loadConfig" finished-at="2022-10-11T11:53:09 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:12 IST" name="loadConfig" finished-at="2022-10-11T12:34:12 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@1c5920df]" started-at="2022-10-11T11:53:09 IST" name="setup" finished-at="2022-10-11T11:53:18 IST" duration-ms="8829" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:12 IST" name="setup" finished-at="2022-10-11T12:34:19 IST" duration-ms="6495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="signupTest()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@1c5920df]" started-at="2022-10-11T11:53:18 IST" name="signupTest" finished-at="2022-10-11T11:53:18 IST" duration-ms="63" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method signature="signupTest()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:19 IST" name="signupTest" finished-at="2022-10-11T12:34:31 IST" duration-ms="12715" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Compound class names not permitted
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+              <![CDATA[element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=106.0.5249.103)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'VENUGOPAL', ip: '10.10.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: unknown]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e0eb3f6ecd785f821490504e63e3d06, actions {actions=[org.openqa.selenium.interactions.Sequence@2233cac0]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58245/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e0eb3f6ecd785f821490504e63e3d06]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=106.0.5249.103)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'VENUGOPAL', ip: '10.10.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: unknown
-at org.openqa.selenium.By$ByClassName.<init>(By.java:310)
-at org.openqa.selenium.By.className(By.java:100)
-at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
-at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
-at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
-at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
-at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
-at com.edureka.pageObjects.Indexpage.<init>(Indexpage.java:13)
-at com.edureka.testScripts.SignUpPageTest.signupTest(SignUpPageTest.java:33)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e0eb3f6ecd785f821490504e63e3d06, actions {actions=[org.openqa.selenium.interactions.Sequence@2233cac0]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58245/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e0eb3f6ecd785f821490504e63e3d06
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at com.edureka.actionDriver.ActionClass.click(ActionClass.java:37)
+at com.edureka.pageObjects.PasswordCreationPage.clickOnStartLearningButton(PasswordCreationPage.java:27)
+at com.edureka.testScripts.SignUpPageTest.signupTest(SignUpPageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,15 +82,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@1c5920df]" started-at="2022-10-11T11:53:18 IST" name="tearDown" finished-at="2022-10-11T11:53:18 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:32 IST" name="tearDown" finished-at="2022-10-11T12:34:32 IST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.edureka.testScripts.SignUpPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
