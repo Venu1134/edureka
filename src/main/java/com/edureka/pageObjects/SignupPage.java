@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.eGov.actionDriver.ActionClass;
+import com.edureka.actionDriver.ActionClass;
 import com.edureka.base.BaseClass;
 
 public class SignupPage extends BaseClass{
@@ -22,7 +22,7 @@ public class SignupPage extends BaseClass{
 	@FindBy(xpath="//*[@class='inputfld captcha_parent_input']//*[@class='number_prefix']")
 	private WebElement contryCode;
 	
-	@FindBy(className="clik_btn_log btn-block signup-new-submit")
+	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
 	private WebElement signupButton;
 	
 	@FindBy(className="login-vd")

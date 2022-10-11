@@ -4,8 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.eGov.actionDriver.ActionClass;
-import com.ics.base.BaseClass;
+import com.edureka.actionDriver.ActionClass;
+import com.edureka.base.BaseClass;
 
 public class Indexpage extends BaseClass{
 
@@ -13,7 +13,7 @@ public class Indexpage extends BaseClass{
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	@FindBy(className="signup_click signup-vd giTrackElementHeader ")
+	@FindBy(xpath="//*[@data-gi-action='Signup']")
 	private WebElement signUpButton;
 	
 	@FindBy(id="search-input")
@@ -23,7 +23,8 @@ public class Indexpage extends BaseClass{
 	private WebElement loginButton;
 	
 	public SignupPage clickOnSignUpButton() {
-		ActionClass.click(getDriver(), signUpButton);
+		ActionClass.JSClick(getDriver(), signUpButton);
+		//ActionClass.click(getDriver(), signUpButton);
 		return new SignupPage();
 	}
 	
