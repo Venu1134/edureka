@@ -19,10 +19,15 @@ public class Indexpage extends BaseClass{
 	@FindBy(id="search-input")
 	private WebElement searchTextField;
 	
-	@FindBy(xpath="//body/nav[1]/div[2]/ul[1]/li[8]/a[1]")
-	private WebElement softwareTesting;
+	@FindBy(xpath="//*[@data-button-name='Login']")
+	private WebElement loginButton;
 	
-	public void clickOnSignUpButton() {
+	public SignupPage clickOnSignUpButton() {
 		ActionClass.click(getDriver(), signUpButton);
+		return new SignupPage();
+	}
+	
+	public void clickOnLoginButton() {
+		ActionClass.click(getDriver(), loginButton);
 	}
 }
