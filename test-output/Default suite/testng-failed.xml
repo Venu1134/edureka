@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.edureka.testScripts.SignUpPageTest">
+      <class name="com.edureka.testScripts.EditDetailsPageTest">
         <methods>
-          <include name="signupTest"/>
-          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="editDetailsPage"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.edureka.testScripts.SignUpPageTest -->
+      </class> <!-- com.edureka.testScripts.EditDetailsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
