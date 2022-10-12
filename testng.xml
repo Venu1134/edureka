@@ -8,6 +8,7 @@
 		<classes>
 			<!--  <class name="com.edureka.testScripts.SignUpPageTest" />-->
 			<class name="com.edureka.testScripts.LoginPageTest"/>
+			<class name="com.edureka.testScripts.ProfilePageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -16,7 +16,16 @@ public class HomePage extends BaseClass{
 	@FindBy(className="user_image")
 	private WebElement userImage;
 	
+	@FindBy(xpath="//a[contains(text(),'My Profile')]")
+	private WebElement myProfile;
+	
 	public boolean validateUserImageDisplayed() {
 		return ActionClass.isDisplayed(getDriver(), userImage);
+	}
+	
+	public ProfilePage navigateToMyProfile() {
+		ActionClass.click(getDriver(), userImage);
+		ActionClass.click(getDriver(), myProfile);
+		return new ProfilePage();
 	}
 }
