@@ -1,96 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-11T12:34:12 IST" name="Suite" finished-at="2022-10-11T12:34:32 IST" duration-ms="19817">
+  <suite started-at="2022-10-12T11:33:34 IST" name="Suite" finished-at="2022-10-12T11:33:59 IST" duration-ms="24695">
     <groups>
     </groups>
-    <test started-at="2022-10-11T12:34:12 IST" name="Test" finished-at="2022-10-11T12:34:32 IST" duration-ms="19817">
-      <class name="com.edureka.testScripts.SignUpPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:12 IST" name="loadConfig" finished-at="2022-10-11T12:34:12 IST" duration-ms="8" status="PASS">
+    <test started-at="2022-10-12T11:33:34 IST" name="Test" finished-at="2022-10-12T11:33:59 IST" duration-ms="24695">
+      <class name="com.edureka.testScripts.LoginPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:34 IST" name="loadConfig" finished-at="2022-10-12T11:33:34 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:12 IST" name="setup" finished-at="2022-10-11T12:34:19 IST" duration-ms="6495" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:34 IST" name="setup" finished-at="2022-10-12T11:33:43 IST" duration-ms="8473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="signupTest()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:19 IST" name="signupTest" finished-at="2022-10-11T12:34:31 IST" duration-ms="12715" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable: [object HTMLButtonElement] has no size and location
-  (Session info: chrome=106.0.5249.103)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VENUGOPAL', ip: '10.10.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4e0eb3f6ecd785f821490504e63e3d06, actions {actions=[org.openqa.selenium.interactions.Sequence@2233cac0]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58245/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4e0eb3f6ecd785f821490504e63e3d06]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
-  (Session info: chrome=106.0.5249.103)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'VENUGOPAL', ip: '10.10.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4e0eb3f6ecd785f821490504e63e3d06, actions {actions=[org.openqa.selenium.interactions.Sequence@2233cac0]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58245/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4e0eb3f6ecd785f821490504e63e3d06
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at com.edureka.actionDriver.ActionClass.click(ActionClass.java:37)
-at com.edureka.pageObjects.PasswordCreationPage.clickOnStartLearningButton(PasswordCreationPage.java:27)
-at com.edureka.testScripts.SignUpPageTest.signupTest(SignUpPageTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="loginTestWithValidEmailPassword()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:43 IST" name="loginTestWithValidEmailPassword" finished-at="2022-10-12T11:33:50 IST" duration-ms="7577" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signupTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.testScripts.SignUpPageTest@41d426b5]" started-at="2022-10-11T12:34:32 IST" name="tearDown" finished-at="2022-10-11T12:34:32 IST" duration-ms="271" status="PASS">
+        </test-method> <!-- loginTestWithValidEmailPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:50 IST" name="tearDown" finished-at="2022-10-12T11:33:51 IST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.edureka.testScripts.SignUpPageTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:51 IST" name="setup" finished-at="2022-10-12T11:33:57 IST" duration-ms="5859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestWithoutEmailPassword()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:57 IST" name="loginTestWithoutEmailPassword" finished-at="2022-10-12T11:33:59 IST" duration-ms="2171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithoutEmailPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.testScripts.LoginPageTest@142269f2]" started-at="2022-10-12T11:33:59 IST" name="tearDown" finished-at="2022-10-12T11:33:59 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.edureka.testScripts.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

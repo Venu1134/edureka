@@ -28,7 +28,8 @@ public class Indexpage extends BaseClass{
 		return new SignupPage();
 	}
 	
-	public void clickOnLoginButton() {
+	public LoginPage clickOnLoginButton() {
 		ActionClass.click(getDriver(), loginButton);
+		return new LoginPage();
 	}
 }

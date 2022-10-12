@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.edureka.testScripts.SignUpPageTest">
+      <class name="com.edureka.testScripts.LoginPageTest">
         <methods>
-          <include name="signupTest"/>
-          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="loginTestWithoutEmailPassword"/>
+          <include name="setup"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.edureka.testScripts.SignUpPageTest -->
+      </class> <!-- com.edureka.testScripts.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
